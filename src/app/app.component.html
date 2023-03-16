@@ -1,0 +1,24 @@
+<div class="center">
+<fieldset>
+<form #myForm="ngForm">
+  <div class="col-md-12 col-md-offset-2">
+    <div class="form-group">
+      <label>Project Starting Date :</label>
+      <input class="input-text" type="date" name="date_start" [(ngModel)]="date_start"required>
+    </div>
+
+    <div class="form-group">
+      <label>Number of Days :</label>
+      <input class="input-text" type="text" name="nbj" [(ngModel)]="nbj" (change)="cal()">
+
+    </div>
+    <div class="form-group">
+      <label>Project Completion End Date: </label>
+      <input class="input-text" type="date" name="date_end" [(ngModel)]="date_end" readonly>
+    </div>
+  </div>
+</form>
+</fieldset>
+</div>
+
+
